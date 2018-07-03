@@ -1,0 +1,20 @@
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<h1>   Liste Commande </h1>
+
+<br><br>
+<ul>
+
+{% for commande in commandes %}
+    <li>{{ commande.adresse }}</li>
+    <li>{{ commande.nom }}</li>
+    <li>{{ commande.numero }}</li>
+{% endfor %}
+
+</ul>
+
+
+{% endblock %}
